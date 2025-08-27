@@ -1,2 +1,163 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+
+"""Linguaem Python
+
+# Operadores Aritméticos
+"""
+
+# Adição
+10 + 2
+
+# Subtração
+10 -2
+
+# Multiplicação
+10 * 2
+
+# Divisão
+10 / 2
+
+# Divisão Inteira
+10 // 2
+
+# Resto da Divisão
+10 % 2
+
+# Potenciação
+10 ** 2
+
+"""# ***Operadores Relacionais***"""
+
+# Menor
+10 < 2
+
+# Menor ou igual
+10 <= 2
+
+# Maior
+10 > 2
+
+# Maior ou igual
+10 >= 2
+
+# Igual
+7 == 7
+
+# Diferente
+7 != 7
+
+"""Operadores Lógicos
+
+
+
+
+*   And
+*   Or
+*   Not
+
+**Tabela Verdade**
+
+And
+"""
+
+print (10 > 2 and 4 < 6)    # V and V - V
+print (10 > 2 and 4 > 6)    # V and F - F
+print (10 < 2 and 4 < 6)    # V and F - F
+print (10 < 2 and 4 > 6)    # F and F - F
+
+"""Or"""
+
+print (10 > 2 or 4 < 6)    # V or V - V
+print (10 > 2 or 4 > 6)    # V or F - V
+print (10 < 2 or 4 < 6)    # V or F - V
+print (10 < 2 or 4 > 6)    # F or F - F
+
+"""Not"""
+
+not 10 > 2  # v - F
+
+not 10 < 2  # F - V
+
+"""# **Visualização de Variáveis e texto**"""
+
+print ('Conhecendo o comando Print')
+
+x = 8
+
+print
+
+y = 10
+
+soma = x + y
+
+print (soma)
+
+nome = 'Rodriguinho'
+print (nome)
+
+"""# **Concatenação**"""
+
+x = 5
+print ("O valor de x é", x)
+
+nome = input("Digite seu nome: ")
+pais_nascimento = input("Digite seu país de nascimento: ")
+estado_nascimento = input("Digite seu estado de nascimento: ")
+ano_nascimento = int(input("Digite seu ano de nascimento: "))
+
+
+from datetime import date
+ano_atual = date.today().year
+idade = ano_atual - ano_nascimento
+
+
+print(f"\n{nome}, você nasceu no {pais_nascimento}, no estado de {estado_nascimento} no ano de {ano_nascimento}.")
+print(f"Portanto, você tem {idade} anos.")
+
+"""# **Condicional**"""
+
+# if
+if 5 < 10:
+  print ('Verdadeiro')
+
+[ ] # If / Else
+num1 = 10
+num2 = 5
+if num1 > num2:
+  print ('O num1 é o maior número')
+else:
+  print ('O num2 é o maior número')
+
+[ ] # IF / ELIF / ELSE
+num1 = 10
+num2 = 10
+if num1 > num2:
+  print ('O num1 é o maior número')
+elif num1 < num2:
+  print ('O num2 é o maior número')
+else:
+  print ('Os números são iguais')
+
+"""# **Condicional com operadores lógicos**
+
+"""
+
+num1 = 10
+num2 = 5
+nume3 = 2
+if (num1 > num2) and (num1 > nume3):
+  print ('O num1 é o maior número')
+else:
+  print ('O num1 não é o maior número')
+
+nota1 = float(input('Digite a nota1: '))
+nota2 = float(input('Digite a nota2: '))
+nota3 = float(input('Digite a nota3: '))
+
+media_aluno = (nota1 + nota2 + nota3) / 3
+
+if media_aluno >= 7:
+  print ('Aprovado')
+elif media_aluno >= 5:
+  print ('Recuperação')
+else:
+  print ('Reprovado')
